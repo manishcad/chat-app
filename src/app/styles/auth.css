@@ -1,0 +1,123 @@
+/* Global Styles */
+
+  
+  /* Login Container */
+  .auth-container {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    width: 350px;
+    text-align: center;
+    margin:auto;
+    height: calc(100vh-10rem);
+
+  }
+  
+  /* Title */
+  .auth-container h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #2a2a2a;
+    color: white;
+  }
+  
+  /* Input Placeholder */
+  .auth-container input::placeholder {
+    color: #999;
+  }
+  
+  /* Submit Button */
+  .auth-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .auth-container button:hover {
+    background: #0056b3;
+  }
+  
+  /* Register Link */
+  .auth-container p {
+    margin-top: 10px;
+    color: #aaa;
+  }
+  
+  .auth-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .auth-container a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* Error Message */
+.error-message {
+    color: #ff4d4d;
+    background: #2a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+
+
+ 
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #aaa;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  

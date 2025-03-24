@@ -1,0 +1,117 @@
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    height: 5rem; /* Fixed height */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+  }
+  
+  /* Logo (Left Side) */
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  /* Navigation Links (Centered) */
+  .nav-links {
+    flex: 1; /* Take available space */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f0a500;
+  }
+  
+  /* Profile Section (Right Side) */
+  .profile-container1 {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes it to the right */
+    cursor: pointer;
+    
+  }
+  
+  .profile-avatar1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  
+  /* Profile Dropdown */
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .profile-container1:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .dropdown button:hover {
+    color: red;
+  }
+  
+  /* Hamburger Menu (for mobile) */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #222;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      padding: 10px;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
